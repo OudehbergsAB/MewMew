@@ -1,0 +1,12 @@
+.background-cat {
+  background-image: url(./../../res/img/portrait_splash.jpg);
+
+  background-size: 288px 488px;
+  background-position: 66px 9px;
+  background-repeat: no-repeat;
+}
+
+.fit-container {
+  width: 100%;
+  height: 100%;
+}

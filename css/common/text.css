@@ -1,0 +1,17 @@
+.alert {
+  border-radius: 20px;
+  border-color: crimson;
+  border-style: solid;
+  border-width: 2px;
+
+  background-color: lightcoral;
+
+  color: darkred;
+  font-weight: 400;
+
+  padding: 0.5em 1em;
+}
+
+.hidden {
+  display: none;
+}

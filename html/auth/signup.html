@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mew Mew</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./../../res/img/mewmew_icon.png"
+    />
+
+    <link rel="stylesheet" href="./../../css/reset.css" />
+    <link rel="stylesheet" href="./../../css/common/form.css" />
+    <link rel="stylesheet" href="./../../css/common/text.css" />
+    <link rel="stylesheet" href="./../../css/auth/main.css" />
+    <link rel="stylesheet" href="./../../css/auth/signup.css" />
+  </head>
+  <body>
+    <main class="fit-container background-cat">
+      <section class="signup">
+        <form class="form" action="./verification.html" method="get">
+          <input hidden name="origin" value="signup" />
+          <div class="item">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <p class="alert hidden">Not an email</p>
+          </div>
+          <div class="item" data-check-password>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+            <p class="alert hidden">Password not allowed</p>
+          </div>
+          <div class="item" data-check-password-repeated>
+            <label for="password-repeated">Password again</label>
+            <input
+              type="password"
+              name="passwordRepeated"
+              id="password-repeated"
+            />
+            <p class="alert hidden">Passwords does not match</p>
+          </div>
+          <div class="item">
+            <label for="remember-me">Remember me</label>
+            <input type="checkbox" name="rememberMe" id="remember-me" />
+          </div>
+          <div class="item">
+            <button type="submit">Sign up</button>
+            <a href="./login.html">Log in instead</a>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="./../../js/auth/input-checker.js"></script>
+  </body>
+</html>

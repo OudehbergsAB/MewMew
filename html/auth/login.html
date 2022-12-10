@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mew Mew</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./../../res/img/mewmew_icon.png"
+    />
+
+    <link rel="stylesheet" href="./../../css/reset.css" />
+    <link rel="stylesheet" href="./../../css/common/form.css" />
+    <link rel="stylesheet" href="./../../css/common/text.css" />
+    <link rel="stylesheet" href="./../../css/auth/main.css" />
+    <link rel="stylesheet" href="./../../css/auth/splash.css" />
+  </head>
+  <body>
+    <main class="fit-container background-cat splash-layout">
+      <header class="splash-header">
+        <h1>Mew</h1>
+        <h1>Mew</h1>
+        <h3>"Like TikTok but for cats!" 10/10⭐</h3>
+      </header>
+      <section>
+        <form class="form" action="./verification.html" method="get">
+          <input hidden name="origin" value="login" />
+          <div class="item">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <p class="alert hidden">Unknown email</p>
+          </div>
+          <div class="item">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+            <p class="alert hidden">Wrong password</p>
+          </div>
+          <div class="item">
+            <label for="remember-me">Remember me</label>
+            <input type="checkbox" name="rememberMe" id="remember-me" />
+          </div>
+          <div class="item">
+            <button type="submit">Log in</button>
+            <a href="./signup.html">Sign up instead</a>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
